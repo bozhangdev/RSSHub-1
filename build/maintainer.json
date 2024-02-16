@@ -1012,6 +1012,9 @@
     "/buaa/sme/:path*": [
         "MeanZhang"
     ],
+    "/bulianglin": [
+        "cnkmmk"
+    ],
     "/bupt/funbox": [],
     "/bupt/grs": [],
     "/bupt/news": [],
@@ -5987,6 +5990,9 @@
     "/shmtu/www/:type": [
         "imbytecat",
         "simonsmh"
+    ],
+    "/shoac/recent-show": [
+        "TonyRL"
     ],
     "/shopback/:store": [
         "nczitzk"
