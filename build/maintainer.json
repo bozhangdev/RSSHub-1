@@ -1326,6 +1326,9 @@
     "/civitai/models": [
         "DIYgod"
     ],
+    "/ciweimao/chapter/:id": [
+        "keocheung"
+    ],
     "/clb/commentary/:lang?": [],
     "/clickme/:site/:grouping/:name": [
         "hoilc"
@@ -5777,6 +5780,9 @@
     ],
     "/rsc/journal/:id/:category?": [
         "nczitzk"
+    ],
+    "/rsshub/m/:key/:url": [
+        "TonyRL"
     ],
     "/rsshub/routes/:lang?": [
         "DIYgod"
