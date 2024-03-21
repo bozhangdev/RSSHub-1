@@ -2855,6 +2855,11 @@
   "/informs/:category?": [
     "Fatpandac"
   ],
+  "/infzm/:id": [
+    "KarasuShin",
+    "ranpox",
+    "xyqfer"
+  ],
   "/inoreader/html_clip/:user/:tag": [],
   "/inoreader/rss/:user/:tag": [
     "EthanWng97"
@@ -4283,7 +4288,7 @@
   "/postman/release-notes": [
     "nczitzk"
   ],
-  "/priconne-redive/news/:location?": [
+  "/priconne-redive/news/:server?": [
     "SayaSS",
     "frankcwl"
   ],
