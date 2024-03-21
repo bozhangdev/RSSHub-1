@@ -1095,6 +1095,38 @@
     "name": "一亩三分地",
     "url": "blog.1point3acres.com"
   },
+  "2023game": {
+    "routes": {
+      "/:category?/:tab?": {
+        "path": "/:category?/:tab?",
+        "categories": [
+          "game"
+        ],
+        "example": "/2023game/sgame/topicList",
+        "parameters": {
+          "category": "分类，见下表",
+          "tab": "标签, 所有:all;最新:topicList;热门:jhcpb"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "游戏星辰",
+        "maintainers": [
+          "xzzpig"
+        ],
+        "url": "www.2023game.com/",
+        "description": "分类\n\n    | PS4游戏 | switch游戏 | 3DS游戏 | PSV游戏 | Xbox360 | PS3游戏 | 世嘉MD/SS | PSP游戏 | PC周边 | 怀旧掌机 | 怀旧主机 | PS4教程 | PS4金手指 | switch金手指 | switch教程 | switch补丁 | switch主题 | switch存档 |\n    | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n    | ps4 | sgame | 3ds | psv | jiaocheng | ps3yx | zhuji.md | zhangji.psp | pcgame | zhangji | zhuji | ps4.psjc | ps41.ps4pkg | nsaita.cundang | nsaita.pojie | nsaita.buding | nsaita.zhutie | nsaita.zhuti |",
+        "location": "index.ts"
+      }
+    },
+    "name": "游戏星辰",
+    "url": "www.2023game.com"
+  },
   "2cycd": {
     "routes": {
       "/:fid/:sort?": {
@@ -15033,6 +15065,31 @@
   },
   "douban": {
     "routes": {
+      "/book/latest/:type?": {
+        "path": "/book/latest/:type?",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/douban/book/latest/fiction",
+        "parameters": {
+          "type": "专题分类，可选，默认为 `all`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "新书速递",
+        "maintainers": [
+          "fengkx",
+          "lyqluis"
+        ],
+        "description": "\n    | 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |",
+        "location": "book/latest.ts"
+      },
       "/book/rank/:type?": {
         "path": "/book/rank/:type?",
         "categories": [
@@ -15380,27 +15437,6 @@
           "DIYgod"
         ],
         "location": "other/later.ts"
-      },
-      "/book/latest": {
-        "path": "/book/latest",
-        "categories": [
-          "social-media"
-        ],
-        "example": "/douban/book/latest",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "新书速递",
-        "maintainers": [
-          "fengkx"
-        ],
-        "location": "other/latest-book.ts"
       },
       "/music/latest/:area?": {
         "path": "/music/latest/:area?",
