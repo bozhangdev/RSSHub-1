@@ -1201,8 +1201,8 @@
   },
   "3dmgame": {
     "routes": {
-      "/:name/:type?": {
-        "path": "/:name/:type?",
+      "/games/:name/:type?": {
+        "path": "/games/:name/:type?",
         "radar": [
           {
             "source": [
@@ -1217,7 +1217,8 @@
         "maintainers": [
           "sinchang",
           "jacky2001114",
-          "HenryQW"
+          "HenryQW",
+          "lyqluis"
         ],
         "location": "game.ts"
       },
@@ -1248,7 +1249,8 @@
         ],
         "name": "新闻中心",
         "maintainers": [
-          "zhboner"
+          "zhboner",
+          "lyqluis"
         ],
         "description": "| 新闻推荐 | 游戏新闻 | 动漫影视 | 智能数码 | 时事焦点    |\n  | -------- | -------- | -------- | -------- | ----------- |\n  |          | game     | acg      | next     | news_36_1 |",
         "location": "news-center.ts"
@@ -32088,9 +32090,31 @@
           "misakicoca"
         ],
         "location": "novel.ts"
+      },
+      "/volume/:id": {
+        "path": "/volume/:id",
+        "categories": [
+          "reading"
+        ],
+        "example": "/linovelib/volume/8",
+        "parameters": {
+          "id": "小说 ID，可在小说页 URL 中找到"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.linovelib.com/novel/:id/catalog"
+            ]
+          }
+        ],
+        "name": "卷",
+        "maintainers": [
+          "rkscv"
+        ],
+        "location": "volume.ts"
       }
     },
-    "name": "哩哔轻小说",
+    "name": "哔哩轻小说",
     "url": "linovelib.com"
   },
   "liquipedia": {
@@ -60288,6 +60312,32 @@
     },
     "name": "羊城晚报金羊网",
     "url": "xwlb.com.cn"
+  },
+  "ygkkk": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/ygkkk",
+        "radar": [
+          {
+            "source": [
+              "ygkkk.blogspot.com/"
+            ]
+          }
+        ],
+        "name": "最新发表",
+        "maintainers": [
+          "cnkmmk"
+        ],
+        "url": "ygkkk.blogspot.com/",
+        "location": "rss.ts"
+      }
+    },
+    "name": "甬哥侃侃侃YouTube教程摘要随笔",
+    "url": "ygkkk.blogspot.com"
   },
   "yicai": {
     "routes": {

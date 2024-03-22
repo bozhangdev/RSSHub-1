@@ -202,7 +202,7 @@
         "source": [
           "/games/:name/:type"
         ],
-        "target": "/3dmgame/:name/:type?"
+        "target": "/3dmgame/games/:name/:type?"
       },
       {
         "title": "新闻中心",
@@ -7800,6 +7800,19 @@
       }
     ]
   },
+  "linovelib.com": {
+    "_name": "哔哩轻小说",
+    "www": [
+      {
+        "title": "卷",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/novel/:id/catalog"
+        ],
+        "target": "/linovelib/volume/:id"
+      }
+    ]
+  },
   "liquipedia.net": {
     "_name": "Liquipedia",
     ".": [
@@ -14998,6 +15011,19 @@
           "/"
         ],
         "target": "/yahoo/news/:region/:category?"
+      }
+    ]
+  },
+  "blogspot.com": {
+    "_name": "甬哥侃侃侃YouTube教程摘要随笔",
+    "ygkkk": [
+      {
+        "title": "最新发表",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/ygkkk/"
       }
     ]
   },
