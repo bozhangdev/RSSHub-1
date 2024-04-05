@@ -9009,6 +9009,20 @@
       }
     ]
   },
+  "ncpssd.cn": {
+    "_name": "国家哲学社会科学文献中心",
+    ".": [
+      {
+        "title": "最新文献",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/newlist"
+        ],
+        "target": "/ncpssd/newlist"
+      }
+    ]
+  },
   "ncu.edu.cn": {
     "_name": "南昌大学",
     "jwc": [
@@ -12485,6 +12499,27 @@
           "/"
         ],
         "target": "/shopback/:store"
+      }
+    ]
+  },
+  "shopify.com": {
+    "_name": "Shopify",
+    "apps": [
+      {
+        "title": "App reviews",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/:handle"
+        ],
+        "target": "/shopify/apps/:handle/reviews/:page?"
+      },
+      {
+        "title": "App store search",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/search"
+        ],
+        "target": "/shopify(_params,url)=>{const{searchParams}=new URL(url).searchParams;return searchParams.has(\"q\")?`/shopify/apps/search/${searchParams.get(\"q\")}`:null}"
       }
     ]
   },
