@@ -64,6 +64,9 @@
   "/12306/zxdt/:id?": [
     "LogicJake"
   ],
+  "/12371/:category?": [
+    "zvrr"
+  ],
   "/005/:category?": [
     "nczitzk"
   ],
@@ -5837,6 +5840,9 @@
   ],
   "/warthunder/news": [
     "axojhf"
+  ],
+  "/watasuke/blog": [
+    "honahuku"
   ],
   "/wdc/download/:id?": [],
   "/web/articles": [
