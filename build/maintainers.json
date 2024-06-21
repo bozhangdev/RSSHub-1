@@ -584,6 +584,9 @@
   "/bbcnewslabs/news": [
     "elxy"
   ],
+  "/bc3ts/post/list/:sort?": [
+    "TonyRL"
+  ],
   "/bdys/:caty?/:type?/:area?/:year?/:order?": [
     "nczitzk"
   ],
@@ -3402,6 +3405,9 @@
   ],
   "/keepass/": [
     "TonyRL"
+  ],
+  "/kelownacapnews/:type": [
+    "hualiong"
   ],
   "/kemono/:source?/:id?": [
     "nczitzk"
