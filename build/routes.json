@@ -8555,7 +8555,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "description": "| 全て | メンテナンス | お知らせ | イベント |\n| :--: | :--: | :--: | :--: |\n| 0 | 1 | 2 | 3 |",
+        "description": "| 全て | イベント | お知らせ | メンテナンス |\n| :--: | :--: | :--: | :--: |\n| 0 | 1 | 2 | 3 |",
         "location": "news.ts"
       }
     },
@@ -49528,6 +49528,35 @@
     },
     "name": "Rawkuma",
     "url": "rawkuma.com"
+  },
+  "raycast": {
+    "routes": {
+      "/changelog": {
+        "path": "/changelog",
+        "name": "Changelog",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/raycast/changelog",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "maintainers": [
+          "equt"
+        ],
+        "location": "changelog.ts"
+      }
+    },
+    "name": "Raycast",
+    "url": "raycast.com",
+    "categories": [
+      "program-update"
+    ]
   },
   "reactiflux": {
     "routes": {
