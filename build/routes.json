@@ -4995,7 +4995,7 @@
         "categories": [
           "multimedia"
         ],
-        "example": "/works",
+        "example": "/asmr-200/works",
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -5017,7 +5017,7 @@
             "target": "asmr-200/works"
           }
         ],
-        "name": "最新资源",
+        "name": "最新收录",
         "maintainers": [
           "hualiong"
         ],

@@ -625,7 +625,7 @@
         source:[ "/" ],
         target:"/asiantolick/:category{.+}?" } ] },
   "asmr-200.com":{ _name:"ASMR Online",
-    ".":[ { title:"最新资源",
+    ".":[ { title:"最新收录",
         docs:"https://docs.rsshub.app/routes/multimedia",
         source:[ "/" ],
         target:"/asmr-200asmr-200/works" } ] },
