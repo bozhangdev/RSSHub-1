@@ -1279,6 +1279,14 @@
         "target": "/apnews/rss/:rss"
       },
       {
+        "title": "Sitemap",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/apnews/sitemap/:route"
+      },
+      {
         "title": "Topics",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
@@ -18714,7 +18722,7 @@
         "target": "/xiaohongshu/board/:board_id"
       },
       {
-        "title": "Unknown",
+        "title": "用户笔记 全文",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/user/profile/:user_id"
