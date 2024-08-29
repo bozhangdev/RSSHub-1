@@ -11533,6 +11533,41 @@
     "name": "国家高端智库 / 综合开发研究院",
     "url": "cdi.com.cn"
   },
+  "cdu": {
+    "routes": {
+      "/jwgg": {
+        "path": "/jwgg",
+        "categories": [
+          "university"
+        ],
+        "example": "/cdu/jwgg",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "jw.cdu.edu.cn/"
+            ]
+          }
+        ],
+        "name": "教务处通知公告",
+        "maintainers": [
+          "uuwor"
+        ],
+        "url": "jw.cdu.edu.cn/",
+        "location": "jwgg.ts"
+      }
+    },
+    "name": "成都大学",
+    "url": "www.cdu.edu.cn"
+  },
   "cdzjryb": {
     "routes": {
       "/zw/projectList": {
