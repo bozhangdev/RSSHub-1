@@ -425,6 +425,9 @@
   "/apkpure/versions/:pkg/:region?": [
     "maple3142"
   ],
+  "/apnews/api/:tags?": [
+    "dzx-dzx"
+  ],
   "/apnews/rss/:category?": [
     "zoenglinghou",
     "mjysci",
@@ -5194,7 +5197,7 @@
   "/sakurazaka46/news": [
     "nczitzk"
   ],
-  "/samdnews/:typeId": [
+  "/samd/news/:typeId": [
     "hualiong"
   ],
   "/samsung/research/blog": [
