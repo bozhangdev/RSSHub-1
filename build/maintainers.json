@@ -2088,6 +2088,9 @@
   "/focustaiwan/:category?": [
     "nczitzk"
   ],
+  "/follow/profile/:uid": [
+    "KarasuShin"
+  ],
   "/followin/:categoryId?/:lang?": [
     "TonyRL"
   ],
@@ -3542,6 +3545,9 @@
   ],
   "/kadokawa/blog": [
     "nczitzk"
+  ],
+  "/kakuyomu/works/:id": [
+    "KarasuShin"
   ],
   "/kamen-rider-official/news/:category?": [
     "nczitzk"
