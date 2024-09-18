@@ -3763,6 +3763,9 @@
   "/lmu/jobs": [
     "StarDxxx"
   ],
+  "/lofter/collection/:collectionID": [
+    "SrakhiuMeow"
+  ],
   "/lofter/tag/:name?/:type?": [
     "hoilc",
     "nczitzk",
@@ -6032,6 +6035,9 @@
   ],
   "/thehindu/topic/:topic": [
     "TonyRL"
+  ],
+  "/theinitium/app/:category?": [
+    "quiniapiezoelectricity"
   ],
   "/theinitium/author/:type/:language?": [
     "AgFlore"
