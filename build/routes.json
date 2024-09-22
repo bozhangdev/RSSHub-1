@@ -1896,7 +1896,8 @@
         ],
         "name": "推荐",
         "maintainers": [
-          "cnkmmk"
+          "cnkmmk",
+          "ovo-tim"
         ],
         "url": "51cto.com/",
         "location": "recommend.ts"
@@ -72434,6 +72435,7 @@
             "source": [
               "m.weibo.cn/u/:uid",
               "m.weibo.cn/profile/:uid",
+              "weibo.com/u/:uid",
               "www.weibo.com/u/:uid"
             ],
             "target": "/user/:uid"
