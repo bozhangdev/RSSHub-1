@@ -3714,7 +3714,8 @@
   "/leiphone/:do?/:keyword?": [],
   "/leiphone/newsflash": [],
   "/lemmy/:community/:sort?": [
-    "wb14123"
+    "wb14123",
+    "pseudoyu"
   ],
   "/lfsyd/home": [
     "auto-bot-ty"
@@ -3913,7 +3914,8 @@
     "TonyRL"
   ],
   "/mastodon/account_id/:site/:account_id/statuses/:only_media?": [
-    "notofoe"
+    "notofoe",
+    "pseudoyu"
   ],
   "/mastodon/acct/:acct/statuses/:only_media?": [
     "notofoe"

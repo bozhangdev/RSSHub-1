@@ -30517,13 +30517,20 @@
       "/:section?/:type?/:user?": {
         "path": "/:section?/:type?/:user?",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/hackernews/threads/comments_list/dang",
         "parameters": {
-          "section": "内容分区，见上表，默认为 `index`",
-          "type": "链接类型，见上表，默认为 `sources`",
-          "user": "设定用户，只在 `threads` 和 `submitted` 分区有效"
+          "section": {
+            "description": "Content section, default to `index`"
+          },
+          "type": {
+            "description": "Link type, default to `sources`"
+          },
+          "user": {
+            "description": "Set user, only valid in `threads` and `submitted` sections"
+          }
         },
         "features": {
           "requireConfig": false,
@@ -30541,12 +30548,12 @@
             ]
           }
         ],
-        "name": "用户",
+        "name": "User",
         "maintainers": [
           "nczitzk",
           "xie-dongping"
         ],
-        "description": "订阅特定用户的内容",
+        "description": "Subscribe to the content of a specific user",
         "location": "index.ts"
       }
     },
@@ -39683,18 +39690,100 @@
       "/:community/:sort?": {
         "path": "/:community/:sort?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/lemmy/technology@lemmy.world/Hot",
         "parameters": {
           "community": "Lemmmy community, for example technology@lemmy.world",
-          "sort": "Sort by, defaut to Active"
+          "sort": {
+            "description": "Sort by",
+            "options": [
+              {
+                "value": "Active",
+                "label": "Active"
+              },
+              {
+                "value": "Hot",
+                "label": "Hot"
+              },
+              {
+                "value": "New",
+                "label": "New"
+              },
+              {
+                "value": "Old",
+                "label": "Old"
+              },
+              {
+                "value": "TopDay",
+                "label": "TopDay"
+              },
+              {
+                "value": "TopWeek",
+                "label": "TopWeek"
+              },
+              {
+                "value": "TopMonth",
+                "label": "TopMonth"
+              },
+              {
+                "value": "TopYear",
+                "label": "TopYear"
+              },
+              {
+                "value": "TopAll",
+                "label": "TopAll"
+              },
+              {
+                "value": "MostComments",
+                "label": "MostComments"
+              },
+              {
+                "value": "NewComments",
+                "label": "NewComments"
+              },
+              {
+                "value": "TopHour",
+                "label": "TopHour"
+              },
+              {
+                "value": "TopSixHour",
+                "label": "TopSixHour"
+              },
+              {
+                "value": "TopTwelveHour",
+                "label": "TopTwelveHour"
+              },
+              {
+                "value": "TopThreeMonths",
+                "label": "TopThreeMonths"
+              },
+              {
+                "value": "TopSixMonths",
+                "label": "TopSixMonths"
+              },
+              {
+                "value": "TopNineMonths",
+                "label": "TopNineMonths"
+              },
+              {
+                "value": "Controversial",
+                "label": "Controversial"
+              },
+              {
+                "value": "Scaled",
+                "label": "Scaled"
+              }
+            ],
+            "default": "Active"
+          }
         },
         "features": {
           "requireConfig": [
             {
               "name": "ALLOW_USER_SUPPLY_UNSAFE_DOMAIN",
-              "description": ""
+              "description": "Allow user to supply unsafe domain"
             }
           ],
           "requirePuppeteer": false,
@@ -39705,7 +39794,8 @@
         },
         "name": "Community",
         "maintainers": [
-          "wb14123"
+          "wb14123",
+          "pseudoyu"
         ],
         "location": "index.ts"
       }
@@ -41696,9 +41786,42 @@
     "routes": {
       "/account_id/:site/:account_id/statuses/:only_media?": {
         "path": "/account_id/:site/:account_id/statuses/:only_media?",
-        "name": "Unknown",
+        "categories": [
+          "social-media",
+          "popular"
+        ],
+        "view": 1,
+        "example": "/mastodon/account_id/mas.to/109300507275095341/statuses/false",
+        "parameters": {
+          "site": "instance address, only domain, no `http://` or `https://` protocol header",
+          "account_id": "account ID, you can get it from `https://INSTANCE/api/v1/accounts/lookup?acct=USERNAME` api",
+          "only_media": {
+            "description": "whether only display media content, default to false, any value to true",
+            "options": [
+              {
+                "value": "true",
+                "label": "true"
+              },
+              {
+                "value": "false",
+                "label": "false"
+              }
+            ],
+            "default": "false"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "User timeline (by account ID)",
         "maintainers": [
-          "notofoe"
+          "notofoe",
+          "pseudoyu"
         ],
         "location": "account-id.ts"
       },
