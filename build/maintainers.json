@@ -4051,7 +4051,8 @@
   ],
   "/metmuseum/exhibitions/:state?": [],
   "/mi/crowdfunding": [
-    "DIYgod"
+    "DIYgod",
+    "nuomi1"
   ],
   "/mi/golden": [
     "nczitzk"
@@ -6947,6 +6948,9 @@
   "/xaut/rsc/:category?": [
     "mocusez",
     "light0926"
+  ],
+  "/xbookcn/:label?": [
+    "Lyunvy"
   ],
   "/xboxfan/news": [
     "XXY233"
