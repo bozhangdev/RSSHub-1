@@ -29601,27 +29601,38 @@
         "description": "| 新闻发布 | 通知通告 | 委领导动态 | 司局动态 | 地方动态 |\n| -------- | -------- | ---------- | -------- | -------- |\n| xwfb     | tzgg     | wlddt      | sjdt     | dfdt     |",
         "location": "ndrc/xwdt.ts"
       },
-      "/ndrc/zfxxgk/iteminfo": {
-        "path": "/ndrc/zfxxgk/iteminfo",
+      "/ndrc/zfxxgk": {
+        "path": [
+          "/ndrc/zfxxgk"
+        ],
+        "name": "中华人民共和国国家发展和改革委员会政府信息公开",
+        "url": "zfxxgk.ndrc.gov.cn",
+        "maintainers": [
+          "howfool",
+          "nczitzk"
+        ],
+        "example": "/gov/ndrc/zfxxgk",
         "categories": [
           "government"
         ],
-        "example": "/gov/ndrc/zfxxgk/iteminfo",
-        "parameters": {},
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
           "antiCrawler": false,
+          "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "国家发展改革委 - 政府信息公开",
-        "maintainers": [
-          "howfool"
+        "radar": [
+          {
+            "source": [
+              "zfxxgk.ndrc.gov.cn/web/dirlist.jsp"
+            ],
+            "target": "/ndrc/zfxxgk"
+          }
         ],
-        "url": "zfxxgk.ndrc.gov.cn/web/dirlist.jsp",
-        "location": "ndrc/zfxxgk/articles.ts"
+        "location": "ndrc/zfxxgk.ts"
       },
       "/nea/sjzz/ghs": {
         "path": "/nea/sjzz/ghs",
@@ -32488,16 +32499,16 @@
   },
   "hellogithub": {
     "routes": {
-      "/article/:sort?/:id?": {
+      "/home/:sort?/:id?": {
         "path": [
-          "/article/:sort?/:id?"
+          "/home/:sort?/:id?"
         ],
         "categories": [
           "programming"
         ],
-        "example": "/hellogithub/article",
+        "example": "/hellogithub/home",
         "parameters": {
-          "sort": "排序方式，见下表，默认为 `hot`，即热门",
+          "sort": "排序方式，见下表，默认为 `featured`，即精选",
           "id": "标签 id，可在对应标签页 URL 中找到，默认为全部标签"
         },
         "features": {
@@ -32508,12 +32519,12 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "文章",
+        "name": "开源项目",
         "maintainers": [
           "moke8",
           "nczitzk"
         ],
-        "description": "| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |",
+        "description": "| 精选 | 全部 |\n  | ---- | ---- |\n  | featured  | all |",
         "location": "index.ts"
       },
       "/ranking/:type?": {
